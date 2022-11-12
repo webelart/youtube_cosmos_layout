@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'MazzardH';
+    src: url('/fonts/MazzardH-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MazzardH';
+    src: url('/fonts/MazzardH-Medium.woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MazzardH';
+    src: url('/fonts/MazzardH-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Move X';
+    src: url('/fonts/Move-X-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueMachina';
+    src: url('/fonts/NeueMachina-Bold.woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueMachina';
+    src: url('/fonts/NeueMachina-Medium.woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueMachina';
+    src: url('/fonts/NeueMachina-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTOctosquares';
+    src: url('/fonts/TTOctosquares-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTOctosquares';
+    src: url('/fonts/TTOctosquares-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+html,
+body {
+    font: 14px/1.4 'MazzardH', sans-serif;
+    color: white;
+}
