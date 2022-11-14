@@ -9,18 +9,23 @@
     transition: all 0.3s;
     cursor: pointer;
     position: relative;
-    height: 56px;
+    height: 4rem;
 
     &:hover {
         color: black;
 
-        .buttonSvg1 {
+        .buttonArrow {
             fill: black;
         }
 
-        .buttonSvg2 {
+        .buttonLine {
             fill: white;
             stroke: black;
+        }
+
+        .buttonBorderCenter {
+            border-color: black transparent;
+            background: white;
         }
     }
 
@@ -30,7 +35,7 @@
             z-index: 0;
             top: 0;
             left: 0;
-            height: 56px;
+            height: 4rem;
         }
 
         &Right {
@@ -38,19 +43,37 @@
             z-index: 0;
             right: 0;
             top: 0;
-            height: 56px; 
+            height: 4rem; 
+        }
+
+        &Center {
+            position: absolute;
+            z-index: 0;
+            top: 0.334rem;
+            left: 2.2857rem;
+            right: 2.2857rem;
+            height: 3.5rem;
+            border-color: white transparent;
+            border-width: 2.5px 0;
+            border-style: solid;
+            transition: all 0.3s;
         }
     }
 
-    &Svg1 {
+    &Text {
+        position: relative;
+        z-index: 1;
+    }
+
+    &Arrow {
         transition: all 0.3s;
         fill:#fff;
     }
     
-    &Svg2 {
+    &Line {
         transition: all 0.3s;
         fill: none;
         stroke: #fff;
-        stroke-width:2px;
+        stroke-width: 2px;
     }
 }
