@@ -24,7 +24,8 @@ const socialNetworks = [
         className: 'AntDesign',
         link: 'https://ant.design',
     }
-]
+];
+
 export const SocialNetworks: React.FC<SocialNetworksProps> = ({}) => {
     return (
         <ul
