@@ -1,5 +1,6 @@
 .button {
-    border: 2px solid white;
+    border: none;
+    box-shadow: none;
     font: 1.1429rem/1rem 'NeueMachina', sans-serif;
     background: none;
     box-shadow: none;
@@ -7,9 +8,49 @@
     padding: 1.4286rem 1.7857rem 1.1429rem;
     transition: all 0.3s;
     cursor: pointer;
+    position: relative;
+    height: 56px;
 
     &:hover {
-        background: white;
         color: black;
+
+        .buttonSvg1 {
+            fill: black;
+        }
+
+        .buttonSvg2 {
+            fill: white;
+            stroke: black;
+        }
+    }
+
+    &Border {
+        &Left {
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            height: 56px;
+        }
+
+        &Right {
+            position: absolute;
+            z-index: 0;
+            right: 0;
+            top: 0;
+            height: 56px; 
+        }
+    }
+
+    &Svg1 {
+        transition: all 0.3s;
+        fill:#fff;
+    }
+    
+    &Svg2 {
+        transition: all 0.3s;
+        fill: none;
+        stroke: #fff;
+        stroke-width:2px;
     }
 }
