@@ -24,8 +24,7 @@
         }
 
         .buttonBorderCenter {
-            border-color: black transparent;
-            background: white;
+            fill: white;
         }
     }
 
@@ -48,15 +47,17 @@
 
         &Center {
             position: absolute;
+            top: 0;
+            left: 2.2143rem;
+            right: 2.5rem;
             z-index: 0;
-            top: 0.334rem;
-            left: 2.2857rem;
-            right: 2.2857rem;
-            height: 3.5rem;
-            border-color: white transparent;
-            border-width: 2.5px 0;
-            border-style: solid;
-            transition: all 0.3s;
+            overflow: hidden;
+
+            svg {
+                position: relative;
+                left: -7px;
+                height: 4rem;
+            }
         }
     }
 

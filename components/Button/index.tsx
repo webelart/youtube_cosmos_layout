@@ -22,12 +22,19 @@ export const Button: React.FC<ButtonProps> = ({
                 {children}
             </span>
             <svg
-                viewBox="0 0 31.96 55.75"
+                viewBox="0 0 31.96 56.5"
                 className={styles.buttonBorderLeft}
             >
-                <path className={styles.buttonLine} d="M31.95,54.75h-2.19s-8-4.5-8-4.5H1V5.75H31.95"/>
-                <path className={styles.buttonArrow} d="M4,8.83s1.23,0,12.22,0L4,20.54s0-11.71,0-11.71Z"/>
+                <path className={styles.buttonLine} d="M31.95,55.5h-2.19s-8-4.5-8-4.5H1V6.5H31.95"/>
+                <path className={styles.buttonArrow} d="M4,9.58s1.23,0,12.22,0L4,21.29s0-11.71,0-11.71Z"/>
             </svg>
+            <div
+                className={styles.buttonBorderCenter}
+            >
+                <svg viewBox="0 0 161.2 56.5">
+                    <path className={styles.buttonLine} d="M0,6.5H161.2l.11,49H0V6.5Z"/>
+                </svg>
+            </div>
             <svg
                 viewBox="0 0 36.12 56.5"
                 className={styles.buttonBorderRight}
@@ -35,14 +42,6 @@ export const Button: React.FC<ButtonProps> = ({
                 <path className={styles.buttonLine} d="M0,6.5H1.92L10.42,1h24.71V55.5H0"/>
                 <path className={styles.buttonArrow} d="M31.46,52.21s-1.23,0-12.22,0l12.22-11.71s0,11.71,0,11.71Z"/>
             </svg>
-            <div className={styles.buttonBorderCenter} />
-            {/* <svg
-                className={styles.buttonBorderCenter}
-                viewBox="0 0 31.96 56"
-            >
-                <path className={styles.buttonLine} d="M0,6H31.96"/>
-                <path className={styles.buttonLine} d="M-.07,55H32.06"/>
-            </svg> */}
         </button>
     );
 }
