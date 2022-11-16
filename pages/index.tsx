@@ -30,29 +30,14 @@ export default function Home() {
           </Title>
           <ul className={styles.buttonList}>
             <li>
-              <ButtonClip onClick={() => {}}>
-                Clip
-              </ButtonClip>
-            </li>
-            <li>
-              <ButtonSVG onClick={() => {}}>
-                SVG 3 pieces
-              </ButtonSVG>
-            </li>
-            <li>
               <ButtonSVG2 onClick={() => {}}>
-                SVG 2 pieces
+                Mint
               </ButtonSVG2>
             </li>
             <li>
-              <ButtonSVG3 onClick={() => {}}>
-                Large text
-              </ButtonSVG3>
-            </li>
-            <li>
-              <ButtonSVG3 onClick={() => {}}>
-                Super Large text
-              </ButtonSVG3>
+              <ButtonSVG2 onClick={() => {}}>
+                Connect Wallet
+              </ButtonSVG2>
             </li>
           </ul>
         </div>
