@@ -1,5 +1,3 @@
-
-import Link from 'next/link';
 import { ReactNode } from 'react';
 
 import styles from './style.module.scss';
@@ -9,7 +7,7 @@ interface ButtonProps {
     children: ReactNode;
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export const ButtonSVG: React.FC<ButtonProps> = ({
     onClick,
     children,
 }) => {
@@ -28,13 +26,11 @@ export const Button: React.FC<ButtonProps> = ({
                 <path className={styles.buttonLine} d="M31.95,55.5h-2.19s-8-4.5-8-4.5H1V6.5H31.95"/>
                 <path className={styles.buttonArrow} d="M4,9.58s1.23,0,12.22,0L4,21.29s0-11.71,0-11.71Z"/>
             </svg>
-            <div
-                className={styles.buttonBorderCenter}
-            >
+            <span className={styles.buttonBorderCenter}>
                 <svg viewBox="0 0 161.2 56.5">
                     <path className={styles.buttonLine} d="M0,6.5H161.2l.11,49H0V6.5Z"/>
                 </svg>
-            </div>
+            </span>
             <svg
                 viewBox="0 0 36.12 56.5"
                 className={styles.buttonBorderRight}
