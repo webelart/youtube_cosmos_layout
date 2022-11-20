@@ -18,6 +18,8 @@ export const ArtButton: React.FC<ArtButtonProps> = ({
             onClick={onClick}
         >
             <span className={styles.artButtonText}>{children}</span>
+            <span className={styles.artButtonAngleLeft} />
+            <span className={styles.artButtonAngleRight} />
         </button>
     );
 }
