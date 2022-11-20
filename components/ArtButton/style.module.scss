@@ -1,0 +1,81 @@
+$size-height: 0.3571rem;
+$size-top: 1.8571rem;
+$size-bottom: 2.4286rem;
+$size-border: 2px;
+
+.artButton {
+    border: none;
+    box-shadow: none;
+    font: 1.1429rem/1rem 'NeueMachina', sans-serif;
+    background: none;
+    color: white;
+    padding: 1.4286rem 1.7857rem 1.1429rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+    height: 4rem;
+
+    &Text {
+        position: relative;
+        z-index: 1;
+    }
+
+    &:hover {
+        &::after {
+            // background: black;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(
+            0 $size-height,
+            calc(100% - $size-bottom) $size-height,
+            calc(100% - $size-top) 0,
+            100% 0,
+            100% calc(100% - $size-height),
+            $size-bottom calc(100% - $size-height),
+            $size-top 100%,
+            0 100%,
+
+            0 calc(100% - $size-border),
+            calc($size-top - 1px) calc(100% - $size-border),
+            calc($size-bottom - 1px) calc(100% - $size-height - $size-border),
+            calc(100% - $size-border) calc(100% - $size-height - $size-border),
+            calc(100% - $size-border) $size-border,
+            calc(100% - $size-top + $size-border - 1px) calc($size-border),
+            calc(100% - $size-bottom + $size-border - 1px) calc($size-height + $size-border),
+            $size-border calc($size-height + $size-border),
+            $size-border calc(100% - $size-border),
+            0 calc(100% - $size-border)
+        );
+        background: white;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        display: block;
+        clip-path: polygon(
+            calc(0px - $size-border) calc($size-height),
+            calc(100% - $size-bottom) $size-height,
+            calc(100% - $size-top) 0,
+            100% 0,
+            100% calc(100% - $size-height),
+            $size-bottom calc(100% - $size-height),
+            $size-top 100%,
+            0 100%,
+        );
+        // background: black;
+    }
+}

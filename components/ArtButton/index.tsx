@@ -3,22 +3,21 @@ import { ReactNode } from 'react';
 
 import styles from './style.module.scss';
 
-interface ButtonProps {
+interface ArtButtonProps {
     onClick: () => void;
     children: ReactNode;
 }
 
-export const ButtonClip: React.FC<ButtonProps> = ({
+export const ArtButton: React.FC<ArtButtonProps> = ({
     onClick,
     children,
 }) => {
     return (
         <button
-            className={styles.buttonClip}
+            className={styles.artButton}
             onClick={onClick}
         >
-            <span className={styles.buttonClipText}>{children}</span>
-            <span className={styles.buttonClipArt} />
+            <span className={styles.artButtonText}>{children}</span>
         </button>
     );
 }

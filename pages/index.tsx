@@ -3,7 +3,7 @@ import cl from 'classnames';
 
 import { Logo } from '../components/Logo';
 import { SocialNetworks } from '../components/SocialNetworks';
-import { ButtonClip } from '../components/ButtonClip';
+import { ArtButton } from '../components/ArtButton';
 import { ButtonSVG } from '../components/ButtonSVG';
 import { ButtonSVG2 } from '../components/ButtonSVG2';
 import { ButtonSVG3 } from '../components/ButtonSVG3';
@@ -19,9 +19,9 @@ export default function Home() {
         >
           <Logo />
           <SocialNetworks />
-          <ButtonSVG onClick={() => {}}>
+          <ArtButton onClick={() => {}}>
             Whitepaper
-          </ButtonSVG>
+          </ArtButton>
         </header>
         <Navigation />
         <div>
