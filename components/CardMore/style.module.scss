@@ -1,0 +1,14 @@
+.cardMore {
+    position: relative;
+    padding-left: 2.5rem;
+
+    &Button {
+        left: 0;
+        top: 10%;
+        position: absolute;
+    }
+
+    &Image {
+        display: block;
+    }
+}
