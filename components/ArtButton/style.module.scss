@@ -53,21 +53,21 @@ $size-border: 2px;
             calc(100% - $size-bottom) $size-height,
             calc(100% - $size-top) 0,
             100% 0,
-            100% calc(100% - $size-height),
-            $size-bottom calc(100% - $size-height),
-            $size-top 100%,
-            0 100%,
+            100% 100%,
+            $size-bottom 100%,
+            $size-top calc(100% - $size-height),
+            0 calc(100% - $size-height),
 
-            0 calc(100% - $size-border),
-            calc($size-top - 1px) calc(100% - $size-border),
-            calc($size-bottom - 1px) calc(100% - $size-height - $size-border),
-            calc(100% - $size-border) calc(100% - $size-height - $size-border),
+            0 calc(100% - $size-border - $size-height),
+            calc($size-top + 1px) calc(100% - $size-border - $size-height),
+            calc($size-bottom + 1px) calc(100% - $size-border),
+            calc(100% - $size-border) calc(100% - $size-border),
             calc(100% - $size-border) $size-border,
             calc(100% - $size-top + $size-border - 1px) calc($size-border),
             calc(100% - $size-bottom + $size-border - 1px) calc($size-height + $size-border),
             $size-border calc($size-height + $size-border),
-            $size-border calc(100% - $size-border),
-            0 calc(100% - $size-border)
+            $size-border calc(100% - $size-border - $size-height),
+            0 calc(100% - $size-border - $size-height)
         );
         background: white;
     }
@@ -87,10 +87,10 @@ $size-border: 2px;
             calc(100% - $size-bottom) $size-height,
             calc(100% - $size-top) 0,
             100% 0,
-            100% calc(100% - $size-height),
-            $size-bottom calc(100% - $size-height),
-            $size-top 100%,
-            0 100%,
+            100% 100%,
+            $size-bottom 100%,
+            $size-top calc(100% - $size-height),
+            0 calc(100% - $size-height),
         );
     }
 
@@ -116,5 +116,55 @@ $size-border: 2px;
         border-bottom: 10px solid white;
         border-left: 10px solid transparent;
         transition: all 0.3s;
+    }
+
+    &Type {
+        font-weight: bold;
+        color: black;
+
+        .artButtonAngleLeft,
+        .artButtonAngleRight {
+            display: none;
+        }
+    }
+
+    &BluePurple {
+        &::after {
+            background: linear-gradient(to right, #89dcd5 0%,#9d65bf 100%) !important;
+        }
+
+        &::before {
+            background: linear-gradient(135deg, #e4f8f7 0%,#beebe8 19%,#a66bc3 79%,#caaddd 100%) !important;
+        }
+    }
+
+    &Blue {
+        &::after {
+            background: linear-gradient(to right, #89dcd5 0%,#7cb1bb 100%) !important;
+        }
+
+        &::before {
+            background: linear-gradient(135deg, #e1effe 0%,#b5d6f9 21%,#85b8c0 79%,#b9d6db 100%) !important;
+        }
+    }
+
+    &GreenYellow {
+        &::after {
+            background: linear-gradient(to right, #a9f0f4 0%,#eedd75 100%) !important;
+        }
+
+        &::before {
+            background: linear-gradient(135deg, #ecfbfe 0%,#d0f7f8 20%,#f2de7b 79%,#f5ecb3 100%) !important;
+        }
+    }
+
+    &YellowPink {
+        &::after {
+            background: linear-gradient(to right, #f4bb42 0%,#f5bdc4 100%) !important;
+        }
+
+        &::before {
+            background: linear-gradient(135deg, #f9db88 0%,#fdf2d1 22%,#fdf2d1 22%,#f5c2c8 79%,#f8dbde 100%) !important;
+        }
     }
 }

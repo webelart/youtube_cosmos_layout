@@ -1,0 +1,117 @@
+.artMenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.8rem;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 19px;
+        top: 2px;
+        width: 3px;
+        bottom: 2px;
+        background: white;
+        z-index: 0;
+    }
+
+    &Card {
+        margin-top: 0;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    &Item {
+        color: white;
+        text-decoration: none;
+        display: block;
+        text-align: right;
+        font-size: 1.5714rem;
+        font-family: 'TTOctosquares', sans-serif;
+        padding-right: 3.8rem;
+        position: relative;
+        z-index: 1;
+
+        &:visited,
+        &:hover {
+            color: white;
+        }
+
+        .artMenuDecorator {
+            background-image: url('./images/white_left_border.png');
+        }
+
+        &:hover {
+            .artMenuDecorator {
+                background-image: url('./images/color_left_border.png');
+            }
+        }
+
+        &:nth-child(odd) {
+            .artMenuDecorator {
+                background-image: url('./images/white_right_border.png');
+            }
+
+            &:hover {
+                .artMenuDecorator {
+                    background-image: url('./images/color_right_border.png');
+                }
+            }
+        }
+
+        &:last-child {
+            .artMenuDecorator {
+                top: auto;
+                bottom: -4px;
+            } 
+        }
+    }
+
+    &Decorator {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 3rem;
+        height: 2.5rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+
+    &ItemActive {
+        .artMenuDecorator {
+            background-image: url('./images/color_left_border.png');
+
+            &:nth-child(odd) {
+                background-image: url('./images/color_right_border.png');
+            }
+        }
+        .artMenuTitle {
+            text-transform: uppercase;
+        }
+
+        .artMenuCard {
+            opacity: 1;
+            height: 13.3571rem;
+            margin-top: 1.2rem;
+        }
+    }
+}
+
+.cardMore {
+    position: relative;
+    padding-left: 2.5rem;
+
+    &Button {
+        left: 0;
+        top: 10%;
+        position: absolute;
+    }
+
+    &Image {
+        display: block;
+    }
+}
