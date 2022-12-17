@@ -53,21 +53,21 @@ $size-border: 2px;
             calc(100% - $size-bottom) $size-height,
             calc(100% - $size-top) 0,
             100% 0,
-            100% calc(100% - $size-height),
-            $size-bottom calc(100% - $size-height),
-            $size-top 100%,
-            0 100%,
+            100% 100%,
+            $size-bottom 100%,
+            $size-top calc(100% - $size-height),
+            0 calc(100% - $size-height),
 
-            0 calc(100% - $size-border),
-            calc($size-top - 1px) calc(100% - $size-border),
-            calc($size-bottom - 1px) calc(100% - $size-height - $size-border),
-            calc(100% - $size-border) calc(100% - $size-height - $size-border),
+            0 calc(100% - $size-border - $size-height),
+            calc($size-top + 1px) calc(100% - $size-border - $size-height),
+            calc($size-bottom + 1px) calc(100% - $size-border),
+            calc(100% - $size-border) calc(100% - $size-border),
             calc(100% - $size-border) $size-border,
             calc(100% - $size-top + $size-border - 1px) calc($size-border),
             calc(100% - $size-bottom + $size-border - 1px) calc($size-height + $size-border),
             $size-border calc($size-height + $size-border),
-            $size-border calc(100% - $size-border),
-            0 calc(100% - $size-border)
+            $size-border calc(100% - $size-border - $size-height),
+            0 calc(100% - $size-border - $size-height)
         );
         background: white;
     }
@@ -87,10 +87,10 @@ $size-border: 2px;
             calc(100% - $size-bottom) $size-height,
             calc(100% - $size-top) 0,
             100% 0,
-            100% calc(100% - $size-height),
-            $size-bottom calc(100% - $size-height),
-            $size-top 100%,
-            0 100%,
+            100% 100%,
+            $size-bottom 100%,
+            $size-top calc(100% - $size-height),
+            0 calc(100% - $size-height),
         );
     }
 
